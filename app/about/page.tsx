@@ -2,6 +2,7 @@
 import { title } from '@/components/primitives';
 import ReactEChartsCore from 'echarts-for-react/lib/core';
 import apiData from './data.json'
+import {Button} from "@nextui-org/button";
 
 import * as echarts from 'echarts/core';
 import {
@@ -251,6 +252,14 @@ export default function AboutPage() {
 				notMerge
 				lazyUpdate
 			/>
+			<div className="w-full flex">
+				<div className="w-1/3"></div>
+				<div className="w-1/3 flex justify-around">
+					<Button color="success" variant="ghost">Buy</Button>
+					<Button color="danger" variant="ghost">Sell</Button>
+				</div>
+				<div className="w-1/3"></div>
+			</div>
 		</div>
 	);
 }
